@@ -21,8 +21,13 @@ function ProductList() {
 
     return (
         <div className="container mx-auto mt-4">
-            <Link to="/categories" className="text-blue-500 hover:underline mb-4">Add Category</Link>
-            <h2 className="text-xl text-cen font-bold mb-4">Product List</h2>
+            <div className="text-center mb-4">
+                <Link to="/categories" className="text-blue-500 hover:underline mb-4 block">Add Category</Link>
+                <Link to="/products" className="text-blue-500 hover:underline mt-4 block">Add Products</Link>
+            </div>
+            <div className="text-center mb-4">
+                <h2 className="text-xl text-cen font-bold mb-4">Product List</h2>
+            </div>
             <table className="table-auto w-full border border-collapse">
                 <thead>
                     <tr className="bg-gray-200 text-left">
